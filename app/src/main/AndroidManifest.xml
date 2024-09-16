@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.challenge_mobile">
+
+    <!-- Especifica as versões de SDK -->
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="33" />
+
+    <!-- Permissão de Internet, necessária para fazer chamadas API -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Permissão para verificar o estado da conexão de rede -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ChallengeMobile"
+        tools:targetApi="31">
+
+        <!-- Atividade principal do aplicativo -->
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.ChallengeMobile">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Atividade para login -->
+        <activity
+            android:name=".ui.LoginActivity"
+            android:exported="true"
+            android:label="@string/login"
+            android:theme="@style/Theme.ChallengeMobile">
+        </activity>
+
+        <!-- Atividade para recuperação de senha -->
+        <activity
+            android:name=".ui.ForgotPasswordActivity"
+            android:exported="true"
+            android:label="@string/forgot_password"
+            android:theme="@style/Theme.ChallengeMobile">
+        </activity>
+
+        <!-- Dependendo do seu projeto, você pode adicionar outras atividades aqui -->
+
+        <!-- Backup e extração de dados -->
+        <meta-data
+            android:name="android.supportsRtl"
+            android:value="true" />
+
+        <!-- Configurações de backup e extração de dados, se necessário -->
+        <!-- Se não houver necessidade de backup ou extração de dados, remova as linhas abaixo -->
+        <meta-data
+            android:name="android.allowBackup"
+            android:value="true" />
+        <meta-data
+            android:name="android:fullBackupContent"
+            android:resource="@xml/backup_rules" />
+        <meta-data
+            android:name="android:dataExtractionRules"
+            android:resource="@xml/data_extraction_rules" />
+
+    </application>
+
+</manifest>

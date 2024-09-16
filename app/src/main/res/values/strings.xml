@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Challenge Mobile</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="email">Email</string>
+    <string name="submit">Submit</string>
+    <string name="entre_com_seu_email">Entre com seu email</string>
+    <string name="redefina_sua_senha">Redefina sua senha</string>
+    <string name="senha">Senha</string>
+    <string name="esqueceu_a_senha">Esqueceu a senha?</string>
+    <string name="bem_vindo_ao_app">Bem-vindo ao app</string>
+</resources>
+
